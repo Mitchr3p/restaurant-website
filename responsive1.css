@@ -1,0 +1,24 @@
+@media (max-width: 720px) {
+  .nav-content .nav-links {
+    display: none;
+  }
+
+  .nav-content .nav-btn {
+    display: none;
+  }
+
+  .nav-content .toggle-btn {
+    display: block;
+  }
+
+  .dropdown-menu.open {
+    position: absolute;
+    top: 78px;
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+  }
+}
