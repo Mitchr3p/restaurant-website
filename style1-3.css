@@ -84,16 +84,18 @@ border: 2px solid red;
 
 .filter-menu {
   display: flex;
-}
-
-.filter-menu {
-  display: flex;
   flex-direction: column;
-  height: ;
-  margin-top: 100px;
+  height: 460px;
+  margin-top: 120px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.57);
   padding-bottom: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.filter-menu h1 {
+  font-size: 2rem;
+  border-top: 2px solid #24292D;
+  border-bottom: 2px solid #24292D;
 }
 
 .filter-menu .menu {
