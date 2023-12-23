@@ -1,17 +1,17 @@
 .section2 {
   height: 100%;
-  position: relative;
   display: flex;
-  padding: 60px 0;
+  padding-top: 90px;
+  padding-bottom: 60px;
+  position: relative;
 }
 
 aside {
   width: 10%;
-  position: sticky;
-  top: 200px;
 }
 
 .page-links {
+  width: 100%;
   position: sticky;
   top: 25% ;
   display: flex;
@@ -23,12 +23,12 @@ aside {
 .other-side {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 60px;
 }
 
 .other-side .s2-content{
   width: 400px;
   margin-top: 60px;
-
 }
 
 .other-side h2 {

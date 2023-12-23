@@ -1,3 +1,138 @@
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.bottom {
+  padding: 0;
+}
+
+.bottom h2 {
+  width: 400px;
+  font-size: 2.1rem;
+  color: #24292D;
+}
+
+.bottom p {
+  max-width: 500px;
+  font-size: 1.02rem;
+  margin-right: 10%;
+}
+
 .section3 {
 height: 100vh;
+border: 2px solid red;
+}
+
+.image-wrap {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3%;
+}
+
+.image-wrap img{
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.image-container1 img {
+  width: 420px;
+
+}
+.image-container2 img {
+  width: 720px;
+  padding-right: 15%;
+}
+
+.bottom2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.bottom2 h2 {
+  width: 400px;
+  font-size: 2.1rem;
+  color: #24292D;
+  margin-right: 3%;
+}
+
+.bottom2 p {
+  max-width: 500px;
+  font-size: 1.02rem;
+  margin-left: 7%;
+}
+
+.image-container1b img {
+  width: 600px;
+
+}
+.image-container2b img {
+  width: 510px;
+  padding-right: 15%;
+}
+
+.filter-menu {
+  display: flex;
+}
+
+.filter-menu {
+  display: flex;
+  flex-direction: column;
+  height: ;
+  margin-top: 100px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.57);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.filter-menu .menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu .nav-menu li{
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.nav-menu li.active {
+  background-color: #6E584A;
+  border-radius: 20px;
+}
+
+.menu .product {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product p {
+  font-size: 1.25rem;
+  margin: 0 5px;
+  padding: 10px 15px;
+}
+
+.product .prics {
+  margin-left: 50px;
+}
+
+.product .scnd-child {
+  font-size: 1rem;
 }
