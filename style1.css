@@ -99,6 +99,7 @@ button {
 
 .section1 {
   height: 100vh;
+  height: 100svh;
   background-image: url(images/main-pic.jpg);
   background-size: cover;
   background-repeat: no-repeat;
