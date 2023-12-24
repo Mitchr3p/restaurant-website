@@ -23,4 +23,20 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  function scrollToSection(sectionId) {
+    const targetDiv = document.getElementById(sectionId);
+  
+    if (targetDiv) {
+      // Calculate the scroll distance
+      const offsetTop = targetDiv.offsetTop;
+      const duration = 4000; // 3 seconds
+  
+      // Scroll to the div with a smooth effect
+      window.scrollTo({
+        top: offsetTop,
+        
+      });
+    }
+  }
 });

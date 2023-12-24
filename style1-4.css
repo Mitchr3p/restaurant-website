@@ -1,0 +1,9 @@
+.section3 {
+  height: 80vh;
+  border: 2px solid red;
+  display: flex;
+}
+
+.section3 .same {
+  border: 2px solid black;
+}

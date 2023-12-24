@@ -1,9 +1,9 @@
 .section2 {
   height: 100%;
   display: flex;
-  padding-top: 90px;
   padding-bottom: 60px;
   position: relative;
+  padding-top: 60px;
 }
 
 aside {
@@ -20,9 +20,16 @@ aside {
   gap: 20px;
 }
 
+.page-links a:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+  transition: all .2s;
+}
+
 .other-side {
   display: flex;
   justify-content: space-between;
+  padding-top: 90px;
   padding-bottom: 60px;
 }
 

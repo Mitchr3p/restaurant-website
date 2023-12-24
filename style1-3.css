@@ -23,11 +23,6 @@
   margin-right: 10%;
 }
 
-.section3 {
-height: 100vh;
-border: 2px solid red;
-}
-
 .image-wrap {
   height: auto;
   display: flex;
@@ -44,11 +39,12 @@ border: 2px solid red;
 
 .image-container1 img {
   width: 420px;
-
+  border-radius: 5px;
 }
 .image-container2 img {
   width: 720px;
   padding-right: 15%;
+  border-radius: 5px;
 }
 
 .bottom2 {
@@ -75,27 +71,30 @@ border: 2px solid red;
 
 .image-container1b img {
   width: 600px;
-
+  border-radius: 5px;
 }
 .image-container2b img {
   width: 510px;
   padding-right: 15%;
+  border-radius: 5px;
 }
 
 .filter-menu {
   display: flex;
   flex-direction: column;
-  height: 460px;
-  margin-top: 120px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.57);
+  height: 590px;
+  padding-top: 90px;
+  border-bottom: 2px solid rgba(163, 161, 161, 0.26);
   padding-bottom: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .filter-menu h1 {
   font-size: 2rem;
   border-top: 2px solid #24292D;
   border-bottom: 2px solid #24292D;
+  margin: 0;
+  padding-left: 40px;
 }
 
 .filter-menu .menu {
@@ -107,7 +106,7 @@ border: 2px solid red;
   list-style: none;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 5px 10px;
-  margin: 0 10px;
+  margin-right: 30px;
   cursor: pointer;
   font-size: 1.2em;
 }
@@ -117,12 +116,19 @@ border: 2px solid red;
   border-radius: 20px;
 }
 
+.nav-menu li:hover {
+  transition: all .3s;
+  transform: scale(1.1);
+}
+
 .menu .product {
   width: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: rgba(110, 88, 74, 0.3);
+  border-radius: 20px;
 }
 
 .product p {
@@ -137,4 +143,55 @@ border: 2px solid red;
 
 .product .scnd-child {
   font-size: 1rem;
+}
+
+.our-vision {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: auto;
+  padding-top: 90px;
+  margin-bottom: 60px;
+}
+
+.our-vision h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.our-vision p {
+  max-width: 500px;
+  margin: 0;
+}
+
+.vision-bottom {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 550px;
+  gap: 50px;
+}
+
+.vision-bottom img {
+  border-radius: 10px;
+}
+
+.vision-bottom .vision-img1 {
+  max-width: 350px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.vision-bottom .vision-img2 {
+  width: 500px;
+  max-height: 220px;
+  object-fit: cover;
+}
+
+.vision-bottom .vision-img3 {
+  max-width: 350px;
+  object-fit: cover;
+  position: relative;
+  top: -285px;
+  left: 275px;
 }
