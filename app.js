@@ -39,4 +39,22 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   }
+
+  const greeting = document.querySelector(".nav-btn");
+  const showMan = document.querySelector(".hide-me")
+
+
+  greeting.addEventListener("click", function() {
+    if (showMan) {
+      showMan.classList.toggle('present');
+      
+      // TO SET A TIMEOUR/DURATION
+      //when you dont plan to do funky css lol
+      setTimeout(function() {
+        showMan.classList.remove('present');
+      }, 5000);
+    }
+  
+  })
+
 });

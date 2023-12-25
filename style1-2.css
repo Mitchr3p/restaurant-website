@@ -1,6 +1,7 @@
 .section2 {
   height: 100%;
   display: flex;
+  width: auto;
   padding-bottom: 60px;
   position: relative;
   padding-top: 60px;

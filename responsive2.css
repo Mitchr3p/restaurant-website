@@ -1,10 +1,10 @@
-@media (max-width: 720px) {
+@media (max-width: 948px) {
   .navigation {
-    height: 60px;
+    height: 70px;
   }
   
   .nav-content {
-    height: 60px;
+    height: 70px;
     margin: 0 10%;
   }
 
@@ -53,7 +53,6 @@
     display: flex;
     flex-direction: column;
     padding-top: 0;
-
   }
 
   aside {
@@ -61,12 +60,24 @@
   }
 
   .other-side {
-    display: none;
+    display: flex;
+    flex-direction: column;
     
   }
   
+  .other-side .s2-content{
+    width: 400px;
+    margin-top: 60px;
+    margin-left: 10%;
+  }
+
+  .other-side h2 {
+    font-size: clamp(1.5rem, 2.4rem, 2.5rem);
+    color: #24292D;
+  }
+
   .wrapper {
-    display: none;
+    margin-left: 10%;
   }
 
   .bottom {
@@ -85,11 +96,12 @@
   }
 
   .bottom p {
+    max-width: 700px;
     font-size: clamp(0.7rem, 1.02rem, 1.5rem);
   }
 
   .image-container1 img {
-    max-width: 550px;
+    width: 550px;
     border-radius: 5px;
   }
   .image-container2 img {
@@ -116,6 +128,7 @@
   }
 
   .bottom2 p {
+    max-width: 700px;
     font-size: clamp(0.7rem, 1.02rem, 1.5rem);
     margin-right: 0;
     margin-left: 0;
@@ -129,8 +142,10 @@
 
   .image-container1b img  {
     min-width: 160px;
-    max-width: 550px;
+    width: 650px;
+    max-height: 350px;
     border-radius: 5px;
+    object-fit: cover;
   }
 
   .image-container2b img {
@@ -145,18 +160,12 @@
     padding-left: 10%;
   }
 
-  .menu {
-    min-width: 200px;
-    max-width: 600px;
-    padding-left: 20px;
-  }
-
   .menu #all-menu {
     display: none;
   }
 
   .menu .product {
-    width: auto;
+    width: 600px;
     max-height: 336px;
     overflow: hidden;
   }
@@ -167,8 +176,7 @@
     align-items: flex-start;
     height: auto;
     margin-bottom: 60px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
     padding-top: 0;
   }
   
@@ -177,24 +185,18 @@
   }
 
   .our-vision p {
+    max-width: 700px;
     font-size: clamp(0.7rem, 1.02rem, 1.5rem);
-  }
-
-  .vision-bottom {
-    display: flex;
-    height: auto;
-    gap: 10px;
   }
 
   .vision-bottom .vision-img1 {
     max-width: 90%;
-    height: auto;
+    height: 500px;
     object-fit: cover;
   }
 
   .vision-bottom .vision-img2 {
-    width: 90%;
-    object-fit: cover;
+    display: none;
   }
 
   .vision-bottom .vision-img3 {
@@ -202,7 +204,7 @@
   }
 
   .s3-content .same {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
