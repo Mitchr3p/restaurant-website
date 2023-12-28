@@ -42,19 +42,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const greeting = document.querySelector(".nav-btn");
   const showMan = document.querySelector(".hide-me")
+  let greetingTypes = ["my friend", "padi mi", "commerade"]
 
+  
 
   greeting.addEventListener("click", function() {
     if (showMan) {
       showMan.classList.toggle('present');
-      
-      // TO SET A TIMEOUR/DURATION
-      //when you dont plan to do funky css lol
-      setTimeout(function() {
-        showMan.classList.remove('present');
-      }, 5000);
     }
-  
+
+    // I TRIED TO SIFT/FILTER THROUGH AN ARRANY RANDOMLY : 
+    // for (let i = 0; i < greetingTypes.length; i++) {
+    // showMan.innerHTML = `
+    // <p> Hello ${greetingTypes[i]} </p>
+    // `
+    // }
+
+    // CORRECT WAY
+    let randomIndex = Math.floor(Math.random() * 3)
+    showMan.innerHTML = `
+    <p class = "pad1"> HELLO </p>
+    <p class = "pad2"> ${greetingTypes[randomIndex]} </p>
+    `
+
+    //  TO SET A TIMEOUR/DURATION
+    // when you dont plan to do funky css lol
+    setTimeout(function() {
+      showMan.classList.remove('present');
+    }, 2200);
   })
 
 });
