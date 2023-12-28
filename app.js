@@ -72,4 +72,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 2200);
   })
 
+  const toHide1 = document.getElementById("hidden-1")
+  const toHide2 = document.getElementById("hidden-2")
+  const toHide3 = document.getElementById("hidden-3")
+
+  toHide1.addEventListener('mouseover',function() {
+    toHide2.style.opacity = 0;
+    toHide3.style.opacity = 0;
+  });
+
+  toHide1.addEventListener('mouseout', function() {
+    toHide2.style.opacity = 1;
+    toHide3.style.opacity = 1;
+  });
 });

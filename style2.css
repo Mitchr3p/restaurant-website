@@ -227,14 +227,18 @@ button {
 
 .second-section {
   margin: 8% 10%;
-  padding: 15px;
+  margin-top: 5%;
+  padding: 25px;
   height: auto;
   display: flex;
   justify-content: space-evenly;
+  border-radius: 20px;
+  border: 2px solid #24292d80;
 }
 
 .left-side {
   height: auto;
+  flex: 0 1 auto;
 }
 
 .left-side img {
@@ -244,8 +248,15 @@ button {
   object-fit: cover;
 }
 
+.left-side img:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 10px rgba(51, 49, 49, 0.5);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 .right-side {
   height: auto;
+  flex: 0 1 auto;
 }
 
 .right-side img {
@@ -254,4 +265,92 @@ button {
   display: block;
   object-fit: cover;
   object-position: bottom;
+}
+
+.right-side img:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 10px rgba(51, 49, 49, 0.5);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.gallery-bottom {
+  max-width: 500px;
+}
+
+.gallery-bottom h2 {
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  font-size: clamp(1.2rem, 2rem, 3rem);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.gallery-bottom p {
+  margin: 0;
+  font-size: clamp(0.7rem, 1rem, 1.3rem);
+}
+
+.third-section {
+  margin: 8% 10%;
+  margin-top: 5%;
+  padding: 0;
+  height: auto;
+  display: flex;
+  border-radius: 20px;
+  border: 2px solid #24292d80;
+}
+
+.one-but {
+  height: 60vh;
+  background-color: #24292d80;
+  width: 50%;
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+}
+
+.one-but p {
+  max-width: 280px;
+  margin-left: 60px;
+  background-color: #FAF9F6;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all .8s ease-in-out;
+}
+
+.one-but p em {
+  position: relative;
+}
+
+
+.one-but p em::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #24292D;
+  transform-origin: bottom right;
+  transition: transform 1s ease-out;
+}
+
+.one-but:hover p em::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.one-but:hover p {
+  transform: translateX(240%);
+  background-color: #24292d80;
+  color: white;
+}
+
+.one-but:hover .special-p {
+  transform: translateX(50%);
+  transition: all 1s;
+}
+
+.two-but {
+  height: 60vh;
 }
