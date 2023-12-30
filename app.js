@@ -72,17 +72,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 2200);
   })
 
-  const toHide1 = document.getElementById("hidden-1")
-  const toHide2 = document.getElementById("hidden-2")
-  const toHide3 = document.getElementById("hidden-3")
+  const toHide1 = document.getElementById("hidden-2")
+  const toHide2 = document.querySelector(".hidden-gem")
+  const tozush = document.querySelector(".trapezoid-2")
 
   toHide1.addEventListener('mouseover',function() {
-    toHide2.style.opacity = 0;
-    toHide3.style.opacity = 0;
+    setTimeout(function() {
+      toHide2.classList.add('gift')
+    }, 1000);
+    tozush.classList.add('ogog')
   });
 
   toHide1.addEventListener('mouseout', function() {
-    toHide2.style.opacity = 1;
-    toHide3.style.opacity = 1;
+    toHide2.classList.remove('gift')
+    tozush.classList.remove('ogog')
   });
+  
+  const zush0 = document.querySelector(".one-but")
+  const zush5 = document.querySelectorAll(".swoosh")
+
+  zush0.addEventListener("mouseover", function() {
+    for (let i = 0; i < zush5.length; i++) {
+      zush5[i].classList.add('xush') 
+    }
+  })
+
+  zush0.addEventListener("mouseout", function() {
+    for (let i = 0; i < zush5.length; i++) {
+      zush5[i].classList.remove('xush') 
+    }
+  })
+
 });
