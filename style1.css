@@ -80,6 +80,14 @@ button {
   background-color: rgb(110, 88, 74, 0.3); 
 }
 
+.nav-content #gallery:hover {
+  background-color: hwb(207 14% 82% / 0.3);
+}
+
+.nav-content #contact:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .nav-content button {
   transition: all 0.3s;
 }

@@ -81,6 +81,14 @@ button {
   background-color: rgb(110, 88, 74, 0.3); 
 }
 
+.nav-content #gallery:hover {
+  background-color: hwb(207 14% 82% / 0.3);
+}
+
+.nav-content #contact:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .nav-content button {
   transition: all 0.3s;
 }
@@ -110,7 +118,7 @@ button {
   padding: 15px;
   height: auto;
   border-radius: 20px;
-  background-color: #24292db3;
+  border: 2px solid #24292d80;
 }
 
 .slider-wrapper {
@@ -228,7 +236,7 @@ button {
 .second-section {
   margin: 8% 10%;
   margin-top: 5%;
-  padding: 25px;
+  padding: 50px 25px;
   height: auto;
   display: flex;
   justify-content: space-evenly;
@@ -252,6 +260,7 @@ button {
   transform: scale(1.05);
   box-shadow: 10px 10px 10px rgba(51, 49, 49, 0.5);
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-radius: 20px;
 }
 
 .right-side {
@@ -271,6 +280,7 @@ button {
   transform: scale(1.05);
   box-shadow: 10px 10px 10px rgba(51, 49, 49, 0.5);
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-radius: 20px;
 }
 
 .gallery-bottom {
@@ -360,58 +370,28 @@ button {
 }
 
 .one-but:hover #hidden-2 {
-  transform: translate(70%, 32%);
+  transform: translate(65%, 35%);
   transition: all 0.5s;
+  z-index: 199;
+}
+
+#hidden-2:hover .hidden-gem {
+  transition: all 1s;
 }
 
 .one-but:hover > #hidden-2:hover > .hidden-gem.gift {
-  color: blue;
-}
-/* 
-.tozuzu {
-  display: none;
-}
-
-.tozuzu.tozaza {
-  display: block;
-  margin: 0;
-  padding: 15px 30px;
-  background-color: #e8e6e8c4;
-  border-radius: 20px;
-  padding: 10px 50px;
-  text-align: center;
-
-  position: absolute;
-  top: 50vh;
-  left: 50%;
-  transform: translateX(-50%);
-  transform: translateY(-50%);
-  z-index: 100;
-  animation: colorShift2 0.8s infinite ease-in;
-}
-
-.tozuzu.tozaza h3 {
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  font-size: 2em;
-  font-weight: bold;
-  animation: colorShift1 2s infinite;
-} */
-
-#hidden-2:hover .hidden-gem {
   background-color: #0d1114;
+  border-radius: 5px;
+}
+
+.hidden-gem.gift {
+  transition: all .5s;
 }
 
 .two-but {
   height: 60vh;
   width: 50%;
   z-index: 170;
-  
-  /* flex-direction: column;
-  justify-content: space-between;
-  padding-top: 60px;
-  padding-bottom: 90px;
-  align-items: center; */
-  
 }
 
 .two-but img {
@@ -484,21 +464,6 @@ button {
   z-index: 1;
 }
 
-.trapezoid-2.ogog {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: scale(1.4);
-}
-
-/* .swoosh:hover { or even use active js state lol
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  height: 200px;
-  width: 200px;
-  background-size: cover;
-  transform: scale(1.3);
-} */
-
 .triangle-2 {
   width: 33%;
   height: 34%;
@@ -521,4 +486,136 @@ button {
   position: relative;
   bottom: 67%;
   z-index: 1;
+}
+
+.section3 {
+  z-index: 299;
+  position: relative;
+}
+
+.section3 .same {
+  margin: 0 10%;
+  border-top: 2px solid black;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.s3-content {
+  padding-bottom: 30px;
+}
+
+.s3-content h3 {
+  padding-left: 16px;
+  transform: scale(1.3);
+}
+
+.s3-content i {
+  font-size: 2rem;
+}
+
+.s3-content .fa-instagram:hover {
+  transform: scale(1.2);
+  color: #cd486b  ;
+}
+
+.s3-content .fa-x-twitter:hover {
+  transform: scale(1.2);
+}
+
+.s3-content a {
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.s3-content a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #24292D;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.s3-content a:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.s3-content .sub1 {
+  padding-top: 70px;
+  transform: scale(1.7);
+  color: #24292D;
+}
+
+.hide-me {
+  display: none;
+}
+
+.hide-me.present {
+  display: block;
+  height: auto;
+  background-color: #e8e6e8c4;
+  border-radius: 20px;
+  padding: 10px 50px;
+  text-align: center;
+
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  z-index: 100;
+  /* transition: box-shadow 2s; */
+  animation: colorShift2 0.8s infinite ease-in;
+}
+
+.hide-me.hide-me.present .pad1 {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  font-size: 2em;
+  font-weight: bold;
+  animation: colorShift1 2s infinite;
+  margin: 0;
+}
+
+@keyframes colorShift1 {
+  0%, 75% {
+    color: #24292D;
+  }
+
+  25% {
+    color: #4b392e;
+  }
+
+  50% {
+    color: #D3CDC8;
+  }
+
+  100% {
+    color: none;
+  }
+}
+
+@keyframes colorShift2 {
+  0%, 100% {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  25%, 75% {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  50% {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.hide-me.hide-me.present .pad2 {
+  font-size: 1.4rem;
+  margin: 0;
 }

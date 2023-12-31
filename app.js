@@ -74,18 +74,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const toHide1 = document.getElementById("hidden-2")
   const toHide2 = document.querySelector(".hidden-gem")
-  const tozush = document.querySelector(".trapezoid-2")
 
   toHide1.addEventListener('mouseover',function() {
     setTimeout(function() {
       toHide2.classList.add('gift')
     }, 1000);
-    tozush.classList.add('ogog')
   });
 
   toHide1.addEventListener('mouseout', function() {
-    toHide2.classList.remove('gift')
-    tozush.classList.remove('ogog')
+    toHide2.classList.remove('gift');
   });
   
   const zush0 = document.querySelector(".one-but")
@@ -102,5 +99,6 @@ document.addEventListener("DOMContentLoaded", function () {
       zush5[i].classList.remove('xush') 
     }
   })
+
 
 });
