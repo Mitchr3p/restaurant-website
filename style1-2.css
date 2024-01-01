@@ -177,10 +177,12 @@ input:checked + label .description {
 }
 
 .image-container1 img {
+  min-width: 0;
   width: 420px;
   border-radius: 5px;
 }
 .image-container2 img {
+  min-width: 0;
   width: 720px;
   padding-right: 15%;
   border-radius: 5px;

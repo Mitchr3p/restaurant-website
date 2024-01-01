@@ -59,8 +59,23 @@ button {
 }
 
 .nav-content h1 {
-  font-size: 2rem;
+  font-size: clamp(0.8rem, 2rem, 2.2rem);
   font-family: 'Josefin Sans';
+  width: auto;
+}
+
+@media (max-width: 500px) {
+  .nav-content {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+  }
+  
+  .nav-content h1 {
+    font-size: 1.5rem;
+  }
 }
 
 .nav-content .nav-links {
@@ -118,6 +133,7 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  width: auto;
 }
 
 .section1 .heading1 {
