@@ -70,12 +70,12 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function() {
       showMan.classList.remove('present');
     }, 2200);
-  })
+  });
 
-  const toHide1 = document.getElementById("hidden-2")
-  const toHide2 = document.querySelector(".hidden-gem")
+  const toHide1 = document.getElementById("hidden-2");
+  const toHide2 = document.querySelector(".hidden-gem");
 
-  toHide1.addEventListener('mouseover',function() {
+  toHide1.addEventListener('mouseover', function() {
     setTimeout(function() {
       toHide2.classList.add('gift')
     }, 1000);
@@ -99,6 +99,5 @@ document.addEventListener("DOMContentLoaded", function () {
       zush5[i].classList.remove('xush') 
     }
   })
-
 
 });

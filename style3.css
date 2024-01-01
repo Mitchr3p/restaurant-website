@@ -179,75 +179,40 @@ button {
   margin: 0;
 }
 
-.contact-container1 {
+.contact-container {
   height: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10%;
+  gap: 20%;
   margin: 0 10%;
-  margin-top: 10%;
+  margin-top: 12%;
   border: 2px solid #24292D;
   border-radius: 20px;
 }
 
-.contact-container1 p {
-  margin: 0;
-}
-
-.contact-container1 h3 {
-font-size: 1.5rem;
+.contact-container h3 {
+font-size: clamp(1.3rem, 3rem, 3rem);
 }
 
 .side {
   height: auto;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
-.contact-container1 .fa-instagram:hover {
-  transform: scale(1.4);
+.soc {
+  margin: 0;
+  text-decoration: 2px underline;
+}
+
+.contact-container .fa-instagram:hover {
+  transform: scale(1.6);
   transition: transform .5s;
   color: #cd486b  ;
 }
 
-.contact-container1 .fa-x-twitter:hover {
-  transform: scale(1.4);
+.contact-container .fa-x-twitter:hover {
+  transform: scale(1.6);
   transition: transform .5s;
-}
-
-.contact-container2 {
-  margin: 0 10%;
-  margin-top: 2%;
-  height: 40vh;
-  height: 40svh;
-  border-top: 2px solid #24292D;
-}
-
-.left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  /* padding-left: 40px;  */
-  width: 50%;
-  height: auto;
-  border: 1px solid blue;
-}
-
-.left input {
-  width: 60%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  border-radius: 10px;
-  border: none;
-  background-color: #dadad7ce;
-  color: black;
-}
-
-input::placeholder {
-  color: #333333;
-  font-family: 'Josefin Sans';
 }
