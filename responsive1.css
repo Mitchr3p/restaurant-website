@@ -71,9 +71,8 @@
     display: none;
   }
 
-  .other-side {
+  #section1 {
     display: none;
-    
   }
   
   .wrapper {
@@ -170,6 +169,11 @@
     width: auto;
     max-height: 336px;
     overflow: hidden;
+  }
+
+  .product p {
+    padding: 10px 15px;
+    padding-bottom: 15px;
   }
 
   .our-vision {
@@ -376,13 +380,14 @@
   }
 
   .bottom2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    margin-bottom: 60px;
-    margin-left: 5%;
-    margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  margin-bottom: 60px;
+  margin-left: 10%;
+  margin-right: 5%;
+  padding: 0;
   }
   
   .bottom2 h2 {
@@ -468,7 +473,8 @@
   .s3-content .same {
     padding-bottom: 50px;
     display: flex;
-    justify-content: flex-start;
+    gap: 10%;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
 
