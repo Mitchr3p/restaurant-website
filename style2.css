@@ -13,6 +13,13 @@ body {
   word-spacing: 1.3px;
   font-family: 'Josefin Sans', 'Lato', Arial, Helvetica, sans-serif;
   overflow-x: hidden;
+  background-image: 
+    linear-gradient(
+      152deg in oklab, 
+      hwb(207 12% 78%) 21% 13%, 12%, hwb(202 12% 78%) 30% 21%, 62%, #fff 83% 0%, #ffff 54% 0%
+    )
+  ;
+
 }
 
 a {
@@ -118,7 +125,7 @@ button {
   padding: 15px;
   height: auto;
   border-radius: 20px;
-  border: 2px solid #24292d80;
+  border: 2px solid #dededf80;
 }
 
 .slider-wrapper {
